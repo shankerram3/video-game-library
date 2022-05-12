@@ -12,16 +12,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { HomeComponent } from './components/home/home.component';
-import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
-import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
-import { DetailsComponent } from './components/details/details.component';
-import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,

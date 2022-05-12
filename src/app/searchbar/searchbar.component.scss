@@ -1,0 +1,72 @@
+ .search{
+          &-logo{
+            width: 40%;
+            float: left;
+          }
+          &-bar{
+            width: 60%;
+            float: right;
+          }
+          &-container{
+            width:100%;
+            height:60px;
+            background-color:  #656952;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 4;
+            padding:20px;
+            margin:auto;
+
+          }
+          &-form{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          &-input{
+            margin-left: 10px;
+            padding: 10px;
+            width: 300px;
+            min-width: 100px;
+            max-width: 300px;
+            border-radius: 5px;
+            outline:none;
+            border:2px solid rgba($color: #000000, $alpha: 1.0);
+          }
+          &-button{
+            border: none;
+            outline: 15px;
+            width: 80px;
+            background-color: aquamarine;
+            padding: 9px;
+            border: 2px solid rgba($color: #000000, $alpha: 1.0);
+            border-radius: 5px;
+            transition-duration: 0.3s;
+            cursor: pointer;
+            font-size: medium;
+
+            &:hover{
+              color: #135494;
+              background-color: lightblue;
+              border: 2px solid #356488;
+            }
+          }
+          &-logo{
+            color:darkorange;
+            font-weight: 700;
+            font-size: xx-large;
+            cursor: pointer;
+            text-decoration:none
+          }
+        }
+
+
+ @media screen and (max-width: 650px) {
+  .search-input {
+    width: 200px; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+ }
